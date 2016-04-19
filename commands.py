@@ -4,3 +4,10 @@ class OpenTab(object):
         self.nid = nid
         self.table_number = table_number
         self.waiter = waiter
+
+
+class PlaceOrder(object):
+
+    def __init__(self, nid, items):
+        self.nid = nid
+        self.items = items

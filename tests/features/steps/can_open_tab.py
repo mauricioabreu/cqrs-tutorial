@@ -6,7 +6,8 @@ from commands import OpenTab
 
 @when('the customer makes its request at table 42')
 def when_open_tab(context):
-    context.tab_opened = TabAggregate().open_tab(
+    tab = TabAggregate()
+    context.tab_opened = tab.open_tab(
         OpenTab(1, 42, "Derek")
     )
 
